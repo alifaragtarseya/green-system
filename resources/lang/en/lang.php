@@ -577,7 +577,7 @@ return [
     'contact_company'  =>  'Contact Company',
     'testiomnals'  =>  'Testimonials',
     'newsletter'  =>  'Newsletter',
-    'newsletter_desc'  =>  'Your opinion is important to us. So contact us for any service.',
+    'newsletter_desc'  =>  'Subscribe to our press releases ',
     'follow_us'  =>  ' Follow Us',
     'watch_our_journey'  =>  ' Watch Our Journey',
     'reasons_to_choose_us'  =>  ' Reasons to choose us',
@@ -598,6 +598,7 @@ return [
     'our_parteners' => 'Our Parteners',
     'who_share_our_success' => 'Who Share Our Success',
     'contact_us_description'  =>  'You can contact us by filling out the following form',
+    'service_desc' =>'We aspire to make our country better by achieving a safe and clean environment.',
 
 
 ];

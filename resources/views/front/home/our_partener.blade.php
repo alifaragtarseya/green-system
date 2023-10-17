@@ -5,7 +5,7 @@
                 <div class="row">
                    @foreach ($partners as $item)
                        <div class="col-md-2">
-                        <div class="card bprder-0">
+                        <div class=" bprder-0">
                             <div class="card-body">
                                 <img src="{{ asset($item->image) }}"  alt="">
                             </div>

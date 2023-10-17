@@ -10,7 +10,7 @@
                      align-items: center;
                      gap: 30%;">
                         <img src="{{ asset('front/icon/Captuhre.png') }}" width="50" class="" alt="">
-                        <b>{{ __('lang.reasons_to_choose_us') }}</b>
+                        <b class="h4 main-color">{{ __('lang.reasons_to_choose_us') }}</b>
                      </p>
                     <h2 class="sec-color">
                         <b>{{ __('lang.we_work_with_you_towards_excellence') }}</b></h2>

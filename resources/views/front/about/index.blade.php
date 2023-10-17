@@ -1,11 +1,8 @@
 @extends('front.layouts.master')
-@section('css')
-    <style>
-        /* .top-header,.navbar-area{
-            background: linear-gradient(80deg, #185f6c, #1e7888cc);
-        } */
-    </style>
+@section('title')
+    {{ __('lang.about_us') }}
 @stop
+
 @section('content')
 
 <div class="meta_tag"
@@ -26,13 +23,18 @@
         <div class="col-md-6 p-5 wow bounceIn{{ isRtl() ? 'Left' : 'Right' }}">
             <div style="background-image: url({{ asset('front/icon/about.png') }}); background-repeat: no-repeat; background-size: contain; background-position: {{ isRtl()?'left':'right' }}; width: 100%;height:400px;">
                 <h2 class="sec-color " >
-                    <b style="border-bottom: 7px solid #D2AE6D">{{ $about->title }}</b>
+                    <b style="border-bottom: 7px solid #D2AE6D">{{ isRtl() ? $about->title : $about->title_en }}</b>
                     <img src="{{ asset('front/icon/Captuhre.png') }}" class="float-{{ isRtl() ? 'left':'right' }}" alt="">
                 </h2>
 
                 <div class="desc pt-5">
                     <div class="text-dark">
-                        {!! $about->description !!}
+                        {!! isRtl() ? $about->description : $about->description_en !!}
+                    </div>
+                </div>
+                <div class="desc pt-5">
+                    <div class="text-dark">
+                        {!! isRtl() ? $about2->description : $about2->description_en !!}
                     </div>
                 </div>
 

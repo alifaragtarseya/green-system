@@ -28,7 +28,7 @@ class ContactController extends GeneralController
         // Get Meta & Banner From DB
         $metaBanner = $this->GetMeta($this->path);
         // Set Meta Home
-        $this->metaGenerate($this->GetMeta($this->path));
+        // $this->metaGenerate($this->GetMeta($this->path));
         return view($this->frontView($this->viewPath . 'index'), compact('metaBanner'));
     }
 

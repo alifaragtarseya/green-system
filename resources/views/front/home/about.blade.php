@@ -6,13 +6,13 @@
             </div>
             <div class="col-md-7 p-5 wow bounceIn{{ isRtl() ? 'Left' : 'Right' }}">
                 <h2 class="sec-color " >
-                    <b style="border-bottom: 7px solid #D2AE6D">{{ $about->title }}</b>
+                    <b style="border-bottom: 7px solid #D2AE6D">{{ isRtl() ? $about->title : $about->title_en }}</b>
                     <img src="{{ asset('front/icon/Captuhre.png') }}" class="float-right" alt="">
                 </h2>
 
                 <div class="desc pt-5">
                    <div class="text-dark">
-                        {!! $about->description !!}
+                        {!! isRtl() ? $about->description : $about->description_en !!}
                    </div>
                 </div>
 

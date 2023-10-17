@@ -15,7 +15,7 @@
                        <b class="h4 main-color">{{ __('lang.our_services') }}</b>
                     </p>
                    <h2 class="sec-color">
-                       <b>{{ __('lang.we_work_with_you_towards_excellence') }}</b></h2>
+                       <b>{{ __('lang.service_desc') }}</b></h2>
 
                        {{-- <b>{{ __('lang.we_work_with_you_desc') }}</b> --}}
                </div>

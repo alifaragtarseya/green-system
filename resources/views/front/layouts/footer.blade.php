@@ -14,7 +14,7 @@
                         </span>
                         <div>
                             <b class="h4 text-white">{{ __('lang.our_Location') }}</b>
-                            <p class="pt-2">{{ $setting->address }}</p>
+                            <p class="pt-2">{{ isRtl() ? $setting->address : $setting->address_en }}</p>
                         </div>
                     </div>
                 </div>
@@ -144,10 +144,10 @@
                                 <a href="{{ route('front.services') }}"><b
                                         class=" text-white">{{ __('lang.services') }}</b></a>
                             </li>
-                            <li>
+                            {{-- <li>
                                 <a href="{{ route('front.contact') }}"><b
                                         class=" text-white">{{ __('lang.contact_us') }}</b></a>
-                            </li>
+                            </li> --}}
                         </ul>
                     </div>
                 </div>
@@ -156,7 +156,7 @@
                         <h4 class="text-white">{{ __('lang.help_center') }}</h4>
                         <ul class="quick-links pt-4">
                             <li class="text-muted">
-                                <a href="#"><b class=" text-white">{{ __('lang.privacy') }}</b></a>
+                                <a href="#"><b class=" text-white">{{ __('lang.privacy_policy') }}</b></a>
                             </li>
                             <li class="text-muted">
                                 <a href="#"><b class=" text-white">{{ __('lang.terms_conditions') }}</b></a>

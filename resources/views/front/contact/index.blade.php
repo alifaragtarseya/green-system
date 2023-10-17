@@ -42,7 +42,7 @@
 
                         <div class="col-md-12 pt-5">
                             <div class="contact-btn">
-                                <button type="submit" class="btn btn-block p-3 text-white" style="background: #00183F;border-radius:4px"> {{ __('lang.send_message') }} </button>
+                                <button type="submit" class="btn btn-block p-3 text-white" style="background: #00183F;border-radius:4px"> {{ __('lang.submit_now') }} </button>
                             </div>
                         </div>
 
