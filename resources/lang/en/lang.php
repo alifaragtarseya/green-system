@@ -599,6 +599,7 @@ return [
     'who_share_our_success' => 'Who Share Our Success',
     'contact_us_description'  =>  'You can contact us by filling out the following form',
     'service_desc' =>'We aspire to make our country better by achieving a safe and clean environment.',
+    'privacy_policy' => 'Privacy Policy',
 
 
 ];

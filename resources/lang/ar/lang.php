@@ -473,7 +473,7 @@ return [
     'back_to_home' => 'أذهب الي الصفحة الرئيسية',
 
 
-    'quick_links'  =>  'روابط سريعه',
+    'quick_links'  =>  'روابط سريعة ',
     'show_services'  =>  'عرض الخدمات',
     'You_need_help_or_support'  =>  'تحتاج الي الماعدة او الدعم',
     'send_your_inquiry'  =>  'ارسل استفسارك',

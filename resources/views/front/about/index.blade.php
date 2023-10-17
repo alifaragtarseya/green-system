@@ -32,11 +32,11 @@
                         {!! isRtl() ? $about->description : $about->description_en !!}
                     </div>
                 </div>
-                <div class="desc pt-5">
+                {{-- <div class="desc pt-5">
                     <div class="text-dark">
                         {!! isRtl() ? $about2->description : $about2->description_en !!}
                     </div>
-                </div>
+                </div> --}}
 
                 {{-- <div class="contact-btn float-{{ isRtl()?'right':'left' }} text-{{ isRtl()?'right':'left' }} pt-5" >
                     <a href="{{ route('front.about') }}" class="btn ">{{ __('lang.about_us') }}</a>
