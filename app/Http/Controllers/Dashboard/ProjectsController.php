@@ -138,7 +138,7 @@ class ProjectsController extends GeneralController
         {
             $inputs = [];
             // Set Images in Inputs request
-            $inputs['image'] = $this->uploadImage($im, $this->path, null, 1000, null, 305);
+            $inputs['image'] = $this->uploadImage($im, $this->path, null);
             // Assign Images To Project Images
             $data->images()->create($inputs);
         }

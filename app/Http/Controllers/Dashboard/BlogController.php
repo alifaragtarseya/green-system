@@ -53,7 +53,7 @@ class BlogController extends GeneralController
         // Get data from request
         $inputs = $request->validated();
         // Push Image Inside Inputs Request
-        $inputs['image'] = $this->uploadImage($request->file('image'), $this->path, null, 817, 408);
+        $inputs['image'] = $this->uploadImage($request->file('image'), $this->path, null);
 
         $inputs['model_type'] = "App\Models\Admin";
         $inputs['model_id'] = auth('admin')->user()->id;
@@ -105,7 +105,7 @@ class BlogController extends GeneralController
         // Get data from request
         $inputs = $request->validated();
         // Push Image Inside Inputs Request
-        $inputs['image'] = $this->uploadImage($request->file('image'), $this->path, $data->image, 817, 408);
+        $inputs['image'] = $this->uploadImage($request->file('image'), $this->path, $data->image);
         // Update Data in DB
         $data->update($inputs);
         $this->flash('success', __('lang.updated'));

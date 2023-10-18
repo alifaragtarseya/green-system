@@ -183,7 +183,7 @@ class ProductController extends GeneralController
 
         $inputs = $request->all();
 
-        $inputs['icon'] = $this->uploadImage($request->file('icon'), $this->path, $data->icon, 817, 408);
+        $inputs['icon'] = $this->uploadImage($request->file('icon'), $this->path, $data->icon);
 
         // dd($inputs);
         ProductFeature::create($inputs);
