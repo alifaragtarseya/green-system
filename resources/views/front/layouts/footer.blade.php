@@ -59,149 +59,151 @@
                     </a>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-lg-3 col-12 {{ isMobile() ? 'text-center pt-4' : '' }}">
-                    <div class="single-footer-widget">
-                        <div class="logo">
-                            {{-- asset($setting->logo_white) ?? --}}
-                            <img src="{{ asset($setting->logo_white) }}" class="img_logo"
-                                alt="{{ $setting->site_name }}">
-                        </div>
-                        <p>
-                            {{ isRtl() ? $setting->sm_description : $setting->sm_description_en }}
-                        </p>
+            <div class="col-md-12">
+                <div class="row">
+                    <div class="col-lg-3 col-12 {{ isMobile() ? 'text-center pt-4' : '' }}">
+                        <div class="single-footer-widget">
+                            <div class="logo">
+                                {{-- asset($setting->logo_white) ?? --}}
+                                <img src="{{ asset($setting->logo_white) }}" class="img_logo"
+                                    alt="{{ $setting->site_name }}">
+                            </div>
+                            <p>
+                                {{ isRtl() ? $setting->sm_description : $setting->sm_description_en }}
+                            </p>
 
-                        <ul class="top-social pt-3 footer-links">
-                            @if ($setting->twitter)
-                                <li>
-                                    <a href="{{ $setting->twitter }}" target="_blank">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
-                                            viewBox="0 0 20 20" fill="none">
-                                            <path
-                                                d="M18.3334 4.83351C17.707 5.10525 17.0446 5.28489 16.3667 5.36684C17.0819 4.93961 17.6178 4.26749 17.8751 3.47517C17.203 3.87523 16.4674 4.15709 15.7001 4.30851C15.1872 3.75232 14.5042 3.38209 13.7583 3.25588C13.0123 3.12968 12.2455 3.25464 11.5782 3.61117C10.9109 3.96769 10.3809 4.53562 10.0711 5.22587C9.76137 5.91613 9.68949 6.68967 9.86675 7.42517C8.50794 7.35645 7.17878 7.00264 5.96563 6.38673C4.75247 5.77082 3.68245 4.90659 2.82508 3.85017C2.52436 4.37531 2.36635 4.97003 2.36675 5.57517C2.36568 6.13716 2.5036 6.69069 2.76821 7.18648C3.03283 7.68227 3.41593 8.10493 3.88341 8.41684C3.34006 8.40206 2.80832 8.25626 2.33341 7.99184V8.03351C2.33749 8.82092 2.61341 9.58275 3.11451 10.1901C3.61561 10.7975 4.31113 11.2132 5.08341 11.3668C4.78613 11.4573 4.47748 11.505 4.16675 11.5085C3.95166 11.506 3.7371 11.4865 3.52508 11.4502C3.74501 12.1275 4.1706 12.7195 4.74264 13.1436C5.31469 13.5678 6.00473 13.8031 6.71675 13.8168C5.51442 14.7629 4.02998 15.2792 2.50008 15.2835C2.22153 15.2844 1.94319 15.2677 1.66675 15.2335C3.22877 16.2421 5.04909 16.7774 6.90841 16.7752C8.19149 16.7885 9.46436 16.546 10.6527 16.0619C11.841 15.5778 12.9209 14.8617 13.8294 13.9556C14.7379 13.0494 15.4567 11.9713 15.9439 10.7843C16.431 9.59719 16.6768 8.32495 16.6667 7.04184V6.60017C17.3207 6.11252 17.8846 5.5147 18.3334 4.83351Z"
-                                                fill="white" />
-                                        </svg>
-                                    </a>
-                                </li>
-                            @endif
-                            @if ($setting->facebook)
-                                <li>
-                                    <a href="{{ $setting->facebook }}" target="_blank">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
-                                            viewBox="0 0 20 20" fill="none">
-                                            <path
-                                                d="M11.6667 11.2498H13.75L14.5834 7.9165H11.6667V6.24984C11.6667 5.3915 11.6667 4.58317 13.3334 4.58317H14.5834V1.78317C14.3117 1.74734 13.2859 1.6665 12.2025 1.6665C9.94004 1.6665 8.33337 3.04734 8.33337 5.58317V7.9165H5.83337V11.2498H8.33337V18.3332H11.6667V11.2498Z"
-                                                fill="white" />
-                                        </svg>
-                                    </a>
-                                </li>
-                            @endif
-                            @if ($setting->instagram)
-                                <li>
-                                    <a href="{{ $setting->instagram }}" target="_blank">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21"
-                                            viewBox="0 0 21 21" fill="none">
-                                            <path fill-rule="evenodd" clip-rule="evenodd"
-                                                d="M3 0.25C2.27065 0.25 1.57118 0.539731 1.05546 1.05546C0.539731 1.57118 0.25 2.27065 0.25 3C0.25 3.72935 0.539731 4.42882 1.05546 4.94454C1.57118 5.46027 2.27065 5.75 3 5.75C3.72935 5.75 4.42882 5.46027 4.94454 4.94454C5.46027 4.42882 5.75 3.72935 5.75 3C5.75 2.27065 5.46027 1.57118 4.94454 1.05546C4.42882 0.539731 3.72935 0.25 3 0.25ZM1.75 3C1.75 2.66848 1.8817 2.35054 2.11612 2.11612C2.35054 1.8817 2.66848 1.75 3 1.75C3.33152 1.75 3.64946 1.8817 3.88388 2.11612C4.1183 2.35054 4.25 2.66848 4.25 3C4.25 3.33152 4.1183 3.64946 3.88388 3.88388C3.64946 4.1183 3.33152 4.25 3 4.25C2.66848 4.25 2.35054 4.1183 2.11612 3.88388C1.8817 3.64946 1.75 3.33152 1.75 3ZM0.25 7C0.25 6.80109 0.329018 6.61032 0.46967 6.46967C0.610322 6.32902 0.801088 6.25 1 6.25H5C5.19891 6.25 5.38968 6.32902 5.53033 6.46967C5.67098 6.61032 5.75 6.80109 5.75 7V20C5.75 20.1989 5.67098 20.3897 5.53033 20.5303C5.38968 20.671 5.19891 20.75 5 20.75H1C0.801088 20.75 0.610322 20.671 0.46967 20.5303C0.329018 20.3897 0.25 20.1989 0.25 20V7ZM1.75 7.75V19.25H4.25V7.75H1.75ZM7.25 7C7.25 6.80109 7.32902 6.61032 7.46967 6.46967C7.61032 6.32902 7.80109 6.25 8 6.25H12C12.1989 6.25 12.3897 6.32902 12.5303 6.46967C12.671 6.61032 12.75 6.80109 12.75 7V7.434L13.185 7.247C13.935 6.92648 14.7307 6.7257 15.543 6.652C18.318 6.4 20.75 8.58 20.75 11.38V20C20.75 20.1989 20.671 20.3897 20.5303 20.5303C20.3897 20.671 20.1989 20.75 20 20.75H16C15.8011 20.75 15.6103 20.671 15.4697 20.5303C15.329 20.3897 15.25 20.1989 15.25 20V13C15.25 12.6685 15.1183 12.3505 14.8839 12.1161C14.6495 11.8817 14.3315 11.75 14 11.75C13.6685 11.75 13.3505 11.8817 13.1161 12.1161C12.8817 12.3505 12.75 12.6685 12.75 13V20C12.75 20.1989 12.671 20.3897 12.5303 20.5303C12.3897 20.671 12.1989 20.75 12 20.75H8C7.80109 20.75 7.61032 20.671 7.46967 20.5303C7.32902 20.3897 7.25 20.1989 7.25 20V7ZM8.75 7.75V19.25H11.25V13C11.25 12.2707 11.5397 11.5712 12.0555 11.0555C12.5712 10.5397 13.2707 10.25 14 10.25C14.7293 10.25 15.4288 10.5397 15.9445 11.0555C16.4603 11.5712 16.75 12.2707 16.75 13V19.25H19.25V11.38C19.25 9.476 17.589 7.972 15.68 8.146C15.0242 8.20567 14.3817 8.36763 13.776 8.626L12.296 9.261C12.1818 9.31003 12.0573 9.32994 11.9336 9.31893C11.8098 9.30793 11.6907 9.26635 11.587 9.19794C11.4833 9.12953 11.3982 9.03643 11.3394 8.927C11.2806 8.81757 11.2499 8.69524 11.25 8.571V7.75H8.75Z"
-                                                fill="white" />
-                                        </svg>
-                                    </a>
-                                </li>
-                            @endif
+                            <ul class="top-social pt-3 footer-links">
+                                @if ($setting->twitter)
+                                    <li>
+                                        <a href="{{ $setting->twitter }}" target="_blank">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                viewBox="0 0 20 20" fill="none">
+                                                <path
+                                                    d="M18.3334 4.83351C17.707 5.10525 17.0446 5.28489 16.3667 5.36684C17.0819 4.93961 17.6178 4.26749 17.8751 3.47517C17.203 3.87523 16.4674 4.15709 15.7001 4.30851C15.1872 3.75232 14.5042 3.38209 13.7583 3.25588C13.0123 3.12968 12.2455 3.25464 11.5782 3.61117C10.9109 3.96769 10.3809 4.53562 10.0711 5.22587C9.76137 5.91613 9.68949 6.68967 9.86675 7.42517C8.50794 7.35645 7.17878 7.00264 5.96563 6.38673C4.75247 5.77082 3.68245 4.90659 2.82508 3.85017C2.52436 4.37531 2.36635 4.97003 2.36675 5.57517C2.36568 6.13716 2.5036 6.69069 2.76821 7.18648C3.03283 7.68227 3.41593 8.10493 3.88341 8.41684C3.34006 8.40206 2.80832 8.25626 2.33341 7.99184V8.03351C2.33749 8.82092 2.61341 9.58275 3.11451 10.1901C3.61561 10.7975 4.31113 11.2132 5.08341 11.3668C4.78613 11.4573 4.47748 11.505 4.16675 11.5085C3.95166 11.506 3.7371 11.4865 3.52508 11.4502C3.74501 12.1275 4.1706 12.7195 4.74264 13.1436C5.31469 13.5678 6.00473 13.8031 6.71675 13.8168C5.51442 14.7629 4.02998 15.2792 2.50008 15.2835C2.22153 15.2844 1.94319 15.2677 1.66675 15.2335C3.22877 16.2421 5.04909 16.7774 6.90841 16.7752C8.19149 16.7885 9.46436 16.546 10.6527 16.0619C11.841 15.5778 12.9209 14.8617 13.8294 13.9556C14.7379 13.0494 15.4567 11.9713 15.9439 10.7843C16.431 9.59719 16.6768 8.32495 16.6667 7.04184V6.60017C17.3207 6.11252 17.8846 5.5147 18.3334 4.83351Z"
+                                                    fill="white" />
+                                            </svg>
+                                        </a>
+                                    </li>
+                                @endif
+                                @if ($setting->facebook)
+                                    <li>
+                                        <a href="{{ $setting->facebook }}" target="_blank">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                viewBox="0 0 20 20" fill="none">
+                                                <path
+                                                    d="M11.6667 11.2498H13.75L14.5834 7.9165H11.6667V6.24984C11.6667 5.3915 11.6667 4.58317 13.3334 4.58317H14.5834V1.78317C14.3117 1.74734 13.2859 1.6665 12.2025 1.6665C9.94004 1.6665 8.33337 3.04734 8.33337 5.58317V7.9165H5.83337V11.2498H8.33337V18.3332H11.6667V11.2498Z"
+                                                    fill="white" />
+                                            </svg>
+                                        </a>
+                                    </li>
+                                @endif
+                                @if ($setting->instagram)
+                                    <li>
+                                        <a href="{{ $setting->instagram }}" target="_blank">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21"
+                                                viewBox="0 0 21 21" fill="none">
+                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                    d="M3 0.25C2.27065 0.25 1.57118 0.539731 1.05546 1.05546C0.539731 1.57118 0.25 2.27065 0.25 3C0.25 3.72935 0.539731 4.42882 1.05546 4.94454C1.57118 5.46027 2.27065 5.75 3 5.75C3.72935 5.75 4.42882 5.46027 4.94454 4.94454C5.46027 4.42882 5.75 3.72935 5.75 3C5.75 2.27065 5.46027 1.57118 4.94454 1.05546C4.42882 0.539731 3.72935 0.25 3 0.25ZM1.75 3C1.75 2.66848 1.8817 2.35054 2.11612 2.11612C2.35054 1.8817 2.66848 1.75 3 1.75C3.33152 1.75 3.64946 1.8817 3.88388 2.11612C4.1183 2.35054 4.25 2.66848 4.25 3C4.25 3.33152 4.1183 3.64946 3.88388 3.88388C3.64946 4.1183 3.33152 4.25 3 4.25C2.66848 4.25 2.35054 4.1183 2.11612 3.88388C1.8817 3.64946 1.75 3.33152 1.75 3ZM0.25 7C0.25 6.80109 0.329018 6.61032 0.46967 6.46967C0.610322 6.32902 0.801088 6.25 1 6.25H5C5.19891 6.25 5.38968 6.32902 5.53033 6.46967C5.67098 6.61032 5.75 6.80109 5.75 7V20C5.75 20.1989 5.67098 20.3897 5.53033 20.5303C5.38968 20.671 5.19891 20.75 5 20.75H1C0.801088 20.75 0.610322 20.671 0.46967 20.5303C0.329018 20.3897 0.25 20.1989 0.25 20V7ZM1.75 7.75V19.25H4.25V7.75H1.75ZM7.25 7C7.25 6.80109 7.32902 6.61032 7.46967 6.46967C7.61032 6.32902 7.80109 6.25 8 6.25H12C12.1989 6.25 12.3897 6.32902 12.5303 6.46967C12.671 6.61032 12.75 6.80109 12.75 7V7.434L13.185 7.247C13.935 6.92648 14.7307 6.7257 15.543 6.652C18.318 6.4 20.75 8.58 20.75 11.38V20C20.75 20.1989 20.671 20.3897 20.5303 20.5303C20.3897 20.671 20.1989 20.75 20 20.75H16C15.8011 20.75 15.6103 20.671 15.4697 20.5303C15.329 20.3897 15.25 20.1989 15.25 20V13C15.25 12.6685 15.1183 12.3505 14.8839 12.1161C14.6495 11.8817 14.3315 11.75 14 11.75C13.6685 11.75 13.3505 11.8817 13.1161 12.1161C12.8817 12.3505 12.75 12.6685 12.75 13V20C12.75 20.1989 12.671 20.3897 12.5303 20.5303C12.3897 20.671 12.1989 20.75 12 20.75H8C7.80109 20.75 7.61032 20.671 7.46967 20.5303C7.32902 20.3897 7.25 20.1989 7.25 20V7ZM8.75 7.75V19.25H11.25V13C11.25 12.2707 11.5397 11.5712 12.0555 11.0555C12.5712 10.5397 13.2707 10.25 14 10.25C14.7293 10.25 15.4288 10.5397 15.9445 11.0555C16.4603 11.5712 16.75 12.2707 16.75 13V19.25H19.25V11.38C19.25 9.476 17.589 7.972 15.68 8.146C15.0242 8.20567 14.3817 8.36763 13.776 8.626L12.296 9.261C12.1818 9.31003 12.0573 9.32994 11.9336 9.31893C11.8098 9.30793 11.6907 9.26635 11.587 9.19794C11.4833 9.12953 11.3982 9.03643 11.3394 8.927C11.2806 8.81757 11.2499 8.69524 11.25 8.571V7.75H8.75Z"
+                                                    fill="white" />
+                                            </svg>
+                                        </a>
+                                    </li>
+                                @endif
 
 
 
-                            {{-- @if (App::getLocale() != 'en')
-                        <li>
-                            <a href="{{route('front.lang')}}?lang=en">
-                                <i>En</i>
-                            </a>
-                        </li>
-                        @else
-                        <li>
-                            <a href="{{ route('front.lang')}}?lang=ar" >
-                                <i>ع</i>
-                            </a>
-                        </li>
-                        @endif --}}
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-12 {{ isMobile() ? 'text-center pt-4' : '' }}">
-                    <h4 class="text-white">{{ __('lang.quick_links') }}</h4>
-                    <div class="single-footer-widget pl-4">
-                        <ul class="quick-links quick_links pt-4" style="list-style-type: square">
+                                {{-- @if (App::getLocale() != 'en')
                             <li>
-                                <a href="{{ route('front.about') }}"><b
-                                        class=" text-white">{{ __('lang.about_us') }}</b></a>
+                                <a href="{{route('front.lang')}}?lang=en">
+                                    <i>En</i>
+                                </a>
                             </li>
-                            <li>
-                                <a href="{{ route('front.contact') }}"><b
-                                        class=" text-white">{{ __('lang.contact_us') }}</b></a>
-                            </li>
-
-                            <li>
-                                <a href="{{ route('front.services') }}"><b
-                                        class=" text-white">{{ __('lang.services') }}</b></a>
-                            </li>
-                            {{-- <li>
-                                <a href="{{ route('front.contact') }}"><b
-                                        class=" text-white">{{ __('lang.contact_us') }}</b></a>
-                            </li> --}}
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-12 {{ isMobile() ? 'text-center pt-4' : '' }}">
-                    <div class="single-footer-widget pl-5">
-                        <h4 class="text-white">{{ __('lang.help_center') }}</h4>
-                        <ul class="quick-links pt-4">
-                            <li class="text-muted">
-                                <a href="#"><b class=" text-white">{{ __('lang.privacy_policy') }}</b></a>
-                            </li>
-                            <li class="text-muted">
-                                <a href="#"><b class=" text-white">{{ __('lang.terms_conditions') }}</b></a>
-                            </li>
-                            <li class="text-muted">
-                                <a href="#"><b class=" text-white">{{ __('lang.join_us') }}</b></a>
-                            </li>
-
-
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="col-lg-3 col-12 {{ isMobile() ? 'text-center pt-4' : '' }}">
-                    <h4 class="text-white">{{ __('lang.newsletter') }}</h4>
-                    <p class="text-white pt-3">{{ __('lang.newsletter_desc') }}</p>
-                    <div class="single-footer-widget ">
-                        <input type="email" name="email" class="form-control  p-3"
-                            style="position: absolute;border-radius: 5px" placeholder="ex@email.com"
-                            autocomplete="new-email" id="">
-                            @if (isRtl())
-                            <span
-                                style="position: relative;top: 14px;right: 87%;background: #008444;padding: 17px 23px 8px;border-radius: 5px 0px 0px 5px;">
                             @else
-                            <span
-                                style="position: relative;top: 14px;left: 87%;background: #008444;padding: 17px 23px 8px;border-radius: 0px 5px 5px 0px;">
-                            @endif
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                viewBox="0 0 24 24" fill="none">
-                                <g clip-path="url(#clip0_397_1431)">
-                                    <path fill-rule="evenodd" clip-rule="evenodd"
-                                        d="M19.768 2.69258C20.724 2.34858 21.648 3.27258 21.304 4.22758L15.264 21.0046C14.889 22.0476 13.422 22.0676 13.018 21.0346L10.189 13.8066L2.96098 10.9786C1.92898 10.5746 1.94898 9.10758 2.99098 8.73158L19.768 2.69158V2.69258Z"
-                                        fill="white" />
-                                </g>
-                                <defs>
-                                    <clipPath id="clip0_397_1431">
-                                        <rect width="24" height="24" fill="white" />
-                                    </clipPath>
-                                </defs>
-                            </svg>
-                        </span>
+                            <li>
+                                <a href="{{ route('front.lang')}}?lang=ar" >
+                                    <i>ع</i>
+                                </a>
+                            </li>
+                            @endif --}}
+                            </ul>
+                        </div>
                     </div>
+                    <div class="col-lg-3 col-12 {{ isMobile() ? 'text-center pt-4' : '' }}">
+                        <h4 class="text-white">{{ __('lang.quick_links') }}</h4>
+                        <div class="single-footer-widget pl-4">
+                            <ul class="quick-links quick_links pt-4" style="list-style-type: square">
+                                <li>
+                                    <a href="{{ route('front.about') }}"><b
+                                            class=" text-white">{{ __('lang.about_us') }}</b></a>
+                                </li>
+                                <li>
+                                    <a href="{{ route('front.contact') }}"><b
+                                            class=" text-white">{{ __('lang.contact_us') }}</b></a>
+                                </li>
+
+                                <li>
+                                    <a href="{{ route('front.services') }}"><b
+                                            class=" text-white">{{ __('lang.services') }}</b></a>
+                                </li>
+                                {{-- <li>
+                                    <a href="{{ route('front.contact') }}"><b
+                                            class=" text-white">{{ __('lang.contact_us') }}</b></a>
+                                </li> --}}
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-12 {{ isMobile() ? 'text-center pt-4' : '' }}">
+                        <div class="single-footer-widget pl-5">
+                            <h4 class="text-white">{{ __('lang.help_center') }}</h4>
+                            <ul class="quick-links pt-4">
+                                <li class="text-muted">
+                                    <a href="#"><b class=" text-white">{{ __('lang.privacy_policy') }}</b></a>
+                                </li>
+                                <li class="text-muted">
+                                    <a href="#"><b class=" text-white">{{ __('lang.terms_conditions') }}</b></a>
+                                </li>
+                                <li class="text-muted">
+                                    <a href="#"><b class=" text-white">{{ __('lang.join_us') }}</b></a>
+                                </li>
+
+
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-12 {{ isMobile() ? 'text-center pt-4' : '' }}">
+                        <h4 class="text-white">{{ __('lang.newsletter') }}</h4>
+                        <p class="text-white pt-3">{{ __('lang.newsletter_desc') }}</p>
+                        <div class="single-footer-widget ">
+                            <input type="email" name="email" class="form-control  p-3"
+                                style="position: absolute;border-radius: 5px" placeholder="ex@email.com"
+                                autocomplete="new-email" id="">
+                                @if (isRtl())
+                                <span
+                                    style="position: relative;top: 14px;right: 87%;background: #008444;padding: 17px 23px 8px;border-radius: 5px 0px 0px 5px;">
+                                @else
+                                <span
+                                    style="position: relative;top: 14px;left: 87%;background: #008444;padding: 17px 23px 8px;border-radius: 0px 5px 5px 0px;">
+                                @endif
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                    viewBox="0 0 24 24" fill="none">
+                                    <g clip-path="url(#clip0_397_1431)">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M19.768 2.69258C20.724 2.34858 21.648 3.27258 21.304 4.22758L15.264 21.0046C14.889 22.0476 13.422 22.0676 13.018 21.0346L10.189 13.8066L2.96098 10.9786C1.92898 10.5746 1.94898 9.10758 2.99098 8.73158L19.768 2.69158V2.69258Z"
+                                            fill="white" />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_397_1431">
+                                            <rect width="24" height="24" fill="white" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                            </span>
+                        </div>
+                    </div>
+
+
                 </div>
-
-
             </div>
         </div>
     </div>

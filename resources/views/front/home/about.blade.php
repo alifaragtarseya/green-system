@@ -17,7 +17,7 @@
                 </div>
 
                 <div class="contact-btn float-{{ isRtl()?'right':'left' }} text-{{ isRtl()?'right':'left' }} pt-5" >
-                    <a href="{{ route('front.about') }}" class="btn ">{{ __('lang.about_us') }}</a>
+                    <a href="{{ route('front.about') }}" class="btn " style="border-radius: 0px 16px 0px 16px">{{ __('lang.about_us') }}</a>
                 </div>
             </div>
 
