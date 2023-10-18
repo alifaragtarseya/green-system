@@ -1,4 +1,4 @@
-<section class="wow bounceInUp" style="background: #EDEFF2">
+<section class="wow bounceInUp" style="border-bottom: 1px solid #EDEFF2">
         <div class="row p-4">
 
             <div class="col-md-12 ">
