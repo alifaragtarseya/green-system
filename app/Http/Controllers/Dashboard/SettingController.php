@@ -85,10 +85,10 @@ class SettingController extends GeneralController
 
     public function updateMySetting(Request $request){
         $inputs = $request->except('_token');
-        isset($inputs['goal_image']) ? $inputs['goal_image'] = $this->uploadImage($request->file('goal_image'), $this->path, $inputs['goal_image'], null, null, null, null, 'png') : '';
-        isset($inputs['about_image_1']) ? $inputs['about_image_1'] = $this->uploadImage($request->file('about_image_1'), $this->path, $inputs['about_image_1'], null, null, null, null, 'png') : '';
-        isset($inputs['about_image_2']) ? $inputs['about_image_2'] = $this->uploadImage($request->file('about_image_2'), $this->path, $inputs['about_image_2'], null, null, null, null, 'png') : '';
-        isset($inputs['about_image_3']) ? $inputs['about_image_3'] = $this->uploadImage($request->file('about_image_3'), $this->path, $inputs['about_image_3'], null, null, null, null, 'png') : '';
+        isset($inputs['goal_image']) ? $inputs['goal_image'] = $this->uploadImage($request->file('goal_image'), $this->path, $inputs['goal_image'], null, null, null, null) : '';
+        isset($inputs['about_image_1']) ? $inputs['about_image_1'] = $this->uploadImage($request->file('about_image_1'), $this->path, $inputs['about_image_1'], null, null, null, null) : '';
+        isset($inputs['about_image_2']) ? $inputs['about_image_2'] = $this->uploadImage($request->file('about_image_2'), $this->path, $inputs['about_image_2'], null, null, null, null) : '';
+        isset($inputs['about_image_3']) ? $inputs['about_image_3'] = $this->uploadImage($request->file('about_image_3'), $this->path, $inputs['about_image_3'], null, null, null, null) : '';
 
         MySetting::setMany($inputs);
         $this->flash('success', trans('lang.updated'));
