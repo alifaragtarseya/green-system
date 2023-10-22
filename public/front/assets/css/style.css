@@ -11,6 +11,19 @@
 ::-webkit-scrollbar-thumb:hover { background: #185F6C; }
 
 /*------------------- glopal style ------------*/
+@font-face {
+    font-family: 'GE SS Two Bold';
+    src: url('../../GESSTwoBold.otf') format('truetype');
+    /* Add additional font formats if available, such as 'woff' or 'woff2' */
+    /* src: url('/path/to/fonts/ge-ss-two-bold.woff') format('woff'); */
+  }
+
+  * {
+    font-family: 'GE SS Two Bold', Arial, sans-serif;
+  }
+body,html,h1,h2,h3,h4,h5,h6,p,a,span,div,*{
+   font-family: 'GE SS Two Bold', Arial, sans-serif !important;
+}
 body,html{
     overflow-x: hidden !important;
 }
@@ -325,12 +338,21 @@ ul.footer-links li:hover svg  {
     stroke-width: 1px;
     stroke: #008444;
 }
+ul.footer-links li.twitter:hover svg  {
+    fill: #008444;
+    stroke-width: 15px;
+    stroke: #008444;
+}
 .single-footer-widget .quick-links li a {
     display: inline-block;
     color: #fff;
     font-weight: 500;
     position: relative;
     font-size: 20px;
+}
+.single-footer-widget .quick-links li::marker{
+    color: var(--MainColor);
+
 }
 
 .single-footer-widget ul.quick_links li{

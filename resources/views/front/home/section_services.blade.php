@@ -6,12 +6,8 @@
         <div class="row">
             <div class="col-md-12 wow rollIn">
                 <div class="d-flex flex-column justify-content-center text-center align-items-center m-auto wow zoomInUp" style="width: {{ isMobile() ? '80%' : '48%' }}">
-                    <p class="main-color" style="display: flex;
-                    width: 100%;
-                    justify-content: start;
-                    align-items: center;
-                    gap: 30%;">
-                       <img src="{{ asset('front/icon/Captuhre.png') }}" width="50" class="" alt="">
+                    <p class="main-color text-center">
+                       {{-- <img src="{{ asset('front/icon/Captuhre.png') }}" width="50" class="" alt=""> --}}
                        <b class="h4 main-color">{{ __('lang.our_services') }}</b>
                     </p>
                    <h2 class="sec-color">

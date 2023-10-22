@@ -14,4 +14,5 @@
     <link rel="stylesheet" href="{{ asset('assets') }}/css/rtl.css">
     @endif
 
+    <link rel="stylesheet" href="{{ asset('front/ArbFonts.com/ArbFONTS-59GE-SS-Two.otf') }}">
     <link rel="stylesheet" href="{{ asset('front/assets/css/style.css') }}">

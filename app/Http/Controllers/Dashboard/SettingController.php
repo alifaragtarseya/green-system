@@ -43,11 +43,11 @@ class SettingController extends GeneralController
         if(!$data) abort(404);
         // Get data from Request
         $inputs = $request->validated();
-        $inputs['logo'] = $this->uploadImage($request->file('logo'), $this->path, $data->logo, null, null, null, null, 'png');
-        $inputs['logo_white'] = $this->uploadImage($request->file('logo_white'), $this->path, $data->logo_white, null, null, null, null, 'png');
-        $inputs['favicon'] = $this->uploadImage($request->file('favicon'), $this->path, $data->favicon, null, null, null, null, 'png');
-        $inputs['favicon_white'] = $this->uploadImage($request->file('favicon_white'), $this->path, $data->favicon_white, null, null, null, null, 'png');
-        $inputs['contact_us_img'] = $this->uploadImage($request->file('contact_us_img'), $this->path, $data->contact_us_img, null, null, null, null, 'png');
+        $inputs['logo'] = $this->uploadImage($request->file('logo'), $this->path, $data->logo);
+        $inputs['logo_white'] = $this->uploadImage($request->file('logo_white'), $this->path, $data->logo_white);
+        $inputs['favicon'] = $this->uploadImage($request->file('favicon'), $this->path, $data->favicon);
+        $inputs['favicon_white'] = $this->uploadImage($request->file('favicon_white'), $this->path, $data->favicon_white);
+        $inputs['contact_us_img'] = $this->uploadImage($request->file('contact_us_img'), $this->path, $data->contact_us_img);
         // Update Data in DB
         $data->update($inputs);
         $this->flash('success', trans('lang.updated'));

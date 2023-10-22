@@ -8,7 +8,7 @@
             justify-content: start;
             align-items: center;
             gap: 3%;">
-               <img src="{{ asset('front/icon/Captuhre.png') }}" width="50" class="" alt="">
+               {{-- <img src="{{ asset('front/icon/Captuhre.png') }}" width="50" class="" alt=""> --}}
                <b class="h4 main-color">{{ __('lang.our_latest_blogs') }}</b>
             </p>
            <h2 class="sec-color">
