@@ -40,7 +40,7 @@
             </div>
             <div class="col-sm-12 col-md-6 wow bounceIn{{ isRtl() ? 'Right' : 'Left' }}">
                 <div class="row">
-                    <div class="col-sm-6">
+                    <div class="col-sm-6 p-0">
                         <img src="{{ asset(optional($mySetting->where('key', 'about_image_1'))->first()->value ?? 'images/default.png') }}"
                             style="height: 100%;border-radius: {{ isRtl() ? '0 20px 20px 0px' : '20px 0px 0px 20px' }};"
                             alt="">
