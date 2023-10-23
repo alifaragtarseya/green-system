@@ -20,6 +20,8 @@
 
     @include('front.layouts.css')
     @yield('css')
+
+
     <style>
 
     </style>
