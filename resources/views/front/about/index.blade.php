@@ -25,7 +25,7 @@
                 <div
                     style="background-image: url({{ asset('front/icon/about.png') }}); background-repeat: no-repeat; background-size: contain; background-position: {{ isRtl() ? 'left' : 'right' }}; width: 100%;">
                     <h2 class="sec-color ">
-                        <b style="border-bottom: 7px solid #D2AE6D">{{ isRtl() ? $about->title : $about->title_en }}</b>
+                        <b style="border-bottom: 7px solid #F7A11B">{{ isRtl() ? $about->title : $about->title_en }}</b>
                         {{-- <img src="{{ asset('front/icon/Captuhre.png') }}" class="float-{{ isRtl() ? 'left' : 'right' }}"
                             alt=""> --}}
                     </h2>
@@ -49,12 +49,12 @@
                         <div class="row">
                             <div class="col-12">
                                 <img src="{{ asset(optional($mySetting->where('key', 'about_image_2'))->first()->value ?? 'images/default.png') }}"
-                                    style="    height: 220px;width: 100%;border-radius: {{ isRtl() ? '20px 0px 0px 20px' : '0 20px 20px 0px' }};"
+                                    style="    height: 233px;width: 100%;border-radius: {{ isRtl() ? '20px 0px 0px 20px' : '0 20px 20px 0px' }};"
                                     alt="">
                             </div>
                             <div class="col-12 pt-2">
                                 <img src="{{ asset(optional($mySetting->where('key', 'about_image_3'))->first()->value ?? 'images/default.png') }}"
-                                    style="    height: 220px;
+                                    style="    height: 233px;
                             width: 100%;
                             border-radius: {{ isRtl() ? '20px 0px 0px 20px' : '0 20px 20px 0px' }};"
                                     alt="">

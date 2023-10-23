@@ -5,8 +5,8 @@
                 <img src="{{ asset($about->image) }}" alt="">
             </div>
             <div class="col-md-7 p-5 wow bounceIn{{ isRtl() ? 'Left' : 'Right' }}">
-                <h2 class="main-color " >
-                    <b >{{ isRtl() ? $about->title : $about->title_en }}</b>
+                <h2 class="sec-color " >
+                    <b style="border-bottom: 7px solid #F7A11B">{{ isRtl() ? $about->title : $about->title_en }}</b>
                     {{-- <img src="{{ asset('front/icon/Captuhre.png') }}" class="float-right" alt=""> --}}
                 </h2>
 

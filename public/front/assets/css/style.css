@@ -19,10 +19,10 @@
   }
 
   * {
-    font-family: 'GE SS Two Bold', Arial, sans-serif;
+    font-family: 'GE SS Two Bold';
   }
 body,html,h1,h2,h3,h4,h5,h6,p,a,span,div,*{
-   font-family: 'GE SS Two Bold', Arial, sans-serif !important;
+   font-family: 'GE SS Two Bold' !important;
 }
 body,html{
     overflow-x: hidden !important;
@@ -377,4 +377,8 @@ ul.footer-links li.twitter:hover svg  {
     padding: 10px 10px 0px;
     border-radius: 50%;
 
+}
+
+.top-social li:last-child {
+    margin :0px 7px !important;
 }
