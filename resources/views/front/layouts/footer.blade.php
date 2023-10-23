@@ -61,14 +61,14 @@
             </div>
             <div class="col-md-12">
                 <div class="row">
-                    <div class="col-lg-3 col-12 {{ isMobile() ? 'text-center pt-4' : '' }}">
+                    <div class="col-lg-4 col-12 {{ isMobile() ? 'text-center pt-4' : '' }}">
                         <div class="single-footer-widget">
                             <div class="logo">
                                 {{-- asset($setting->logo_white) ?? --}}
                                 <img src="{{ asset($setting->logo_white) }}" class="img_logo" style="width: 125px;"
                                     alt="{{ $setting->site_name }}">
                             </div>
-                            <p style="font-size: 14px">
+                            <p style="font-size: 18px">
                                 {{ isRtl() ? $setting->sm_description : $setting->sm_description_en }}
                             </p>
 
@@ -121,7 +121,7 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="col-lg-3 pt-4  col-12 {{ isMobile() ? 'text-center pt-4' : '' }}">
+                    <div class="col-lg-2 pt-4  col-12 {{ isMobile() ? 'text-center pt-4' : '' }}">
                         <h4 class="text-white">{{ __('lang.quick_links') }}</h4>
                         <div class="single-footer-widget pl-4">
                             <ul class="quick-links quick_links pt-4" style="list-style-type: square">
