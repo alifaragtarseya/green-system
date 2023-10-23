@@ -21,8 +21,8 @@
                 <div class="item pt-3 wow zoomInDown" style="height: 100%" >
                     <div class="card border-0 p-2" style="height: 100%; border-radius: 20px;">
                         <img src="{{ asset($item->image) }}" class="card-img-top" style="border-radius: 10px" alt="">
-                        <span style="position: absolute;padding: 5px;background: white;border-radius: 50px;top: {{ isMobile()?'28':'36' }}%;left: 40px;">
-                        <i style="font-size: 45px;padding: 0px 8px;background: #008444;color: white;border-radius: 50%;" class="icon_view {{ $item->icon }}"></i></span>
+                        <span style="position: absolute;padding: 12px 4px;background: white;border-radius: 50px;top: {{ isMobile()?'28':'36' }}%;left: 40px;">
+                        <i style="font-size: 41px;padding: 7px 13px;background: #008444;color: white;border-radius: 50%;" class="icon_view {{ $item->icon }}"></i></span>
                         <div class="card-body  ">
                             <br>
                             <b class="h4">{{ $item->title }}</b>
