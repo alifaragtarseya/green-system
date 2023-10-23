@@ -21,7 +21,7 @@
         <div class="row">
 
            @foreach ($blogs as $item)
-            <div class="col-md-4 wow bounceInLeft">
+            <div class="col-md-6 col-lg-4 wow bounceInLeft">
                 <div class="card p-4 features-item border-radius-20">
 
                     <img src="{{ asset($item->image) }}" class="card-img-top border-radius-20 position-relative" style="width: 100%;height: 300px;"  alt="">

@@ -18,7 +18,7 @@
         <div class="row">
 
            @foreach ($features as $item)
-            <div class="col-md-4  wow bounceInLeft">
+            <div class="col-lg-4 col-md-6  wow bounceInLeft">
                 <div class="card pt-4 border-0 features-item">
                     <img src="{{ asset($item->image) }}" width="70" class="m-auto position-relative" alt="">
                     <span style="width: 50px;height: 50px;border-radius: 50%;background-color: #f7a11b4a;    position: absolute;right: {{ $right??'35%' }};top: 20%;"></span>

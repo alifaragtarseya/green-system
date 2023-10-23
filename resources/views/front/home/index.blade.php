@@ -65,7 +65,7 @@
                 @foreach ($sliders as $item)
                 <div class="carousel-item {{ $loop->first ? 'active' : '' }}">
                     <img src="{{ pathFile($item->image) }}" style="    width: inherit;" class="slider_image">
-                    <div class="carousel-caption d-none d-md-block text-{{ isRtl()?'right':'left' }}">
+                    <div class="carousel-caption d-none d-md-block text-{{ isRtl()?'right':'left' }} " style="{{ isMobile()?'bottom:0%;':'' }}">
                         <h1 class="slider_title" style="font-size: {{ isMobile()?'80':'100' }}px;" >{{ $item->title }}</h1>
                         <p class="text-white pt-5 wow bounceIn{{ isRtl() ? 'Right' : 'Left' }}" style="width: 50%;text-align: initial">{{ $item->description }}</p>
 

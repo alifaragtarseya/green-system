@@ -21,7 +21,7 @@
 
 
         <div class="row pt-5 pb-5 ">
-            <div class="col-md-6 p-5 wow bounceIn{{ isRtl() ? 'Left' : 'Right' }}">
+            <div class="col-md-6 col-12 p-lg-5 p-md-3 wow bounceIn{{ isRtl() ? 'Left' : 'Right' }}">
                 <div
                     style="background-image: url({{ asset('front/icon/about.png') }}); background-repeat: no-repeat; background-size: contain; background-position: {{ isRtl() ? 'left' : 'right' }}; width: 100%;">
                     <h2 class="sec-color ">
@@ -38,26 +38,31 @@
 
                 </div>
             </div>
-            <div class="col-sm-12 col-md-6 wow bounceIn{{ isRtl() ? 'Right' : 'Left' }}">
+            <div class="col-12 col-md-6 wow bounceIn{{ isRtl() ? 'Right' : 'Left' }}">
                 <div class="row">
                     <div class="col-sm-6 p-0">
-                        <img src="{{ asset(optional($mySetting->where('key', 'about_image_1'))->first()->value ?? 'images/default.png') }}"
-                            style="height: 100%;border-radius: {{ isRtl() ? '0 20px 20px 0px' : '20px 0px 0px 20px' }};"
-                            alt="">
+                        <div style="border-radius: {{ isRtl() ? '0 20px 20px 0px' : '20px 0px 0px 20px' }};height: 100%;width: 100%;background-size: cover;background-position: center;background-image: url({{ asset(optional($mySetting->where('key', 'about_image_1'))->first()->value ?? 'images/default.png') }}); "></div>
+                        {{-- <img src=""
+                            style="height: 100%;"
+                            alt=""> --}}
                     </div>
                     <div class="col-sm-6">
                         <div class="row">
                             <div class="col-12">
-                                <img src="{{ asset(optional($mySetting->where('key', 'about_image_2'))->first()->value ?? 'images/default.png') }}"
+                                <div style="border-radius: {{ isRtl() ? '20px 0px 0px 20px' : '0 20px 20px 0px' }};height: 220px;width: 100%;background-size: cover;background-position: center;background-image: url({{ asset(optional($mySetting->where('key', 'about_image_2'))->first()->value ?? 'images/default.png') }}); "></div>
+
+                                {{-- <img src="{{ asset(optional($mySetting->where('key', 'about_image_2'))->first()->value ?? 'images/default.png') }}"
                                     style="    height: 233px;width: 100%;border-radius: {{ isRtl() ? '20px 0px 0px 20px' : '0 20px 20px 0px' }};"
-                                    alt="">
+                                    alt=""> --}}
                             </div>
                             <div class="col-12 pt-2">
-                                <img src="{{ asset(optional($mySetting->where('key', 'about_image_3'))->first()->value ?? 'images/default.png') }}"
+                                <div style="border-radius: {{ isRtl() ? '20px 0px 0px 20px' : '0 20px 20px 0px' }};height: 220px;width: 100%;background-size: cover;background-position: center;background-image: url({{ asset(optional($mySetting->where('key', 'about_image_3'))->first()->value ?? 'images/default.png') }}); "></div>
+
+                                {{-- <img src="{{ asset(optional($mySetting->where('key', 'about_image_3'))->first()->value ?? 'images/default.png') }}"
                                     style="    height: 233px;
                             width: 100%;
                             border-radius: {{ isRtl() ? '20px 0px 0px 20px' : '0 20px 20px 0px' }};"
-                                    alt="">
+                                    alt=""> --}}
                             </div>
                         </div>
                     </div>
