@@ -66,10 +66,10 @@
                 <div class="carousel-item {{ $loop->first ? 'active' : '' }}">
                     <img src="{{ pathFile($item->image) }}" style="    width: inherit;" class="slider_image">
                     <div class="carousel-caption d-none d-md-block text-{{ isRtl()?'right':'left' }} " style="{{ isMobile()?'bottom:0%;':'' }}">
-                        <h1 class="slider_title" style="font-size: {{ isMobile()?'80':'100' }}px;" >{{ $item->title }}</h1>
-                        <p class="text-white pt-5 wow bounceIn{{ isRtl() ? 'Right' : 'Left' }}" style="width: 50%;text-align: initial">{{ $item->description }}</p>
+                        <h1 class="slider_title" style="font-size: {{ isMobile()?'60':'100' }}px;" >{{ $item->title }}</h1>
+                        <p class="text-white pt-lg-5 wow bounceIn{{ isRtl() ? 'Right' : 'Left' }}" style="width: {{ isMobile()?'100%':'50%' }};text-align: initial">{{ $item->description }}</p>
 
-                       <div class="d-flex   wow slideInUp" style="display: flex;gap: 45px; ">
+                       <div class="d-flex   wow slideInUp" style="display: flex;gap: 45px; {{ isMobile()?'align-items: end;':'' }}">
                         @if ($item->link)
                         <div class="contact-btn float-{{ isRtl()?'right':'left' }} text-{{ isRtl()?'right':'left' }} pt-3" >
                             <a href="{{ route('front.about') }}" class="btn ">{{ __('lang.about_us') }}</a>
@@ -77,7 +77,7 @@
                         @endif
                         @if ($setting->who_we_are_video)
                         {{-- <div class="play-icon"> --}}
-                            <div class="pt-3 wow slideInUp">
+                            <div class="pt-lg-3 wow slideInUp">
 
                                 <a class="video-play-icon d-flex align-items-center " style="gap: 20px;cursor: pointer;" id="play-video" data-toggle="modal" data-target="#exampleModal">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">
@@ -91,7 +91,7 @@
                         {{-- </div> --}}
                         @endif
                        </div>
-                        <div class="links wow bounceInLeft pt-4">
+                        <div class="links wow bounceInLeft pt-lg-4">
                             <p class="text-{{ isRtl()?'right':'left' }} text-white">{{ __('lang.follow_us') }}</p>
                             <ul class="top-social">
                                 @if ($setting->twitter)
