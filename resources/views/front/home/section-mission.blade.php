@@ -4,7 +4,7 @@
     <div class="wow zoomInUp">
 
         <div class="row m-0">
-            <div class="col-3 col-md-3 mt-4">
+            <div class="col-12 col-lg-3 col-md-12 mt-4">
                 <div class="nav flex-column our-vision nav-pills" id="v-pills-tab" role="tablist"
                     aria-orientation="vertical">
                     <button class="nav-link active" id="v-pills-principle-tab" data-toggle="pill" style="{{ isMobile()?'padding: 18px 30px;':'' }}"
@@ -18,8 +18,8 @@
                         aria-controls="v-pills-our_mission" aria-selected="false">{{ __('lang.our_mission') }}</button>
                 </div>
             </div>
-            <div class="col-lg-9 col-9 ">
-                <div class="tab-content pt-lg-5" id="v-pills-tabContent">
+            <div class="col-lg-9 col-12 pt-4 ">
+                <div class="tab-content pt-lg-5 {{ isMobile() ? 'text-center':'' }}" id="v-pills-tabContent">
                     <div class="tab-pane fade our-vision-content show active" id="v-pills-principle" role="tabpanel"
                         aria-labelledby="v-pills-principle-tab">
                         <div>
