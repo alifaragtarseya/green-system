@@ -19,43 +19,43 @@
                 </div>
             </div>
             <div class="col-lg-9 col-9 ">
-                <div class="tab-content" id="v-pills-tabContent">
+                <div class="tab-content pt-5" id="v-pills-tabContent">
                     <div class="tab-pane fade our-vision-content show active" id="v-pills-principle" role="tabpanel"
                         aria-labelledby="v-pills-principle-tab">
                         <div>
-                            <img src="{{ asset('front/icon/Captuhre.png') }}" alt="">
+                            {{-- <img src="{{ asset('front/icon/Captuhre.png') }}" alt=""> --}}
                             <p class="p-5 pb-0 m-0">
                                 {{ optional($mySetting->where('key', 'principle_description_' . App::getLocale())->first())->value ?? '' }}
                             </p>
 
-                            <p class="text-{{ isRtl() ? 'left' : 'right' }}">
-                                <img class="" src="{{ asset('front/icon/Captuhre.png') }}" alt="">
+                          <p class="text-{{ isRtl() ? 'left' : 'right' }}">
+                               {{-- <imgclass=""src="asset('front/icon/Captuhre.png')" alt=""> --}}
                             </p>
                         </div>
                     </div>
                     <div class="tab-pane fade our-vision-content" id="v-pills-our_vision" role="tabpanel"
                         aria-labelledby="v-pills-our_vision-tab">
                         <div>
-                            <img src="{{ asset('front/icon/Captuhre.png') }}" alt="">
+                            {{-- <img src="{{ asset('front/icon/Captuhre.png') }}" alt=""> --}}
                             <p class="p-5 pb-0 m-0">
                                 {{ optional($mySetting->where('key', 'vision_description_' . App::getLocale())->first())->value ?? '' }}
                             </p>
 
-                            <p class="text-{{ isRtl() ? 'left' : 'right' }}">
-                                <img class="" src="{{ asset('front/icon/Captuhre.png') }}" alt="">
+                             <p class="text-{{ isRtl() ? 'left' : 'right' }}">
+                               {{-- <img class="" src="{{ asset('front/icon/Captuhre.png') }}" alt="">--}}
                             </p>
                         </div>
                     </div>
                     <div class="tab-pane fade our-vision-content" id="v-pills-our_mission" role="tabpanel"
                         aria-labelledby="v-pills-our_mission-tab">
                         <div>
-                            <img src="{{ asset('front/icon/Captuhre.png') }}" alt="">
+                            {{-- <img src="{{ asset('front/icon/Captuhre.png') }}" alt=""> --}}
                             <p class="p-5 pb-0 m-0">
                                 {{ optional($mySetting->where('key', 'mission_description_' . App::getLocale())->first())->value ?? '' }}
                             </p>
 
                             <p class="text-{{ isRtl() ? 'left' : 'right' }}">
-                                <img class="" src="{{ asset('front/icon/Captuhre.png') }}" alt="">
+                                {{-- <img class="" src="{{ asset('front/icon/Captuhre.png') }}" alt=""> --}}
                             </p>
                         </div>
                     </div>
