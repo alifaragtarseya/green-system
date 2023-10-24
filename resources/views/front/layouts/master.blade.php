@@ -32,9 +32,9 @@
     @include('front.layouts.navbar')
     @yield('content')
 
-    <div class="go-top">
+    {{-- <div class="go-top">
         <i class="las la-long-arrow-alt-up"></i>
-    </div>
+    </div> --}}
 
     @include('front.layouts.script')
     @yield('js')
